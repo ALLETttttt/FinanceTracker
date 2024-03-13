@@ -26,7 +26,7 @@ class Account(Base):
     __tablename__ = 'accounts'
 
     id = Mapped[_id]
-    user_id = Mapped[int] = mapped_column(sqlalchemy.ForeignKey('users.id'))
+    user_id = Mapped[int] = relationship(sqlalchemy.ForeignKey('users.id'))
     account_name = Mapped[str]
     account_type = Mapped[str]
 
