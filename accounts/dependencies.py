@@ -10,5 +10,4 @@ class AccountCreateDependency(BaseDependency):
 
     def __call__(self, body: CreateAccount, session: Session = Depends(get_db)):
         self.repo.session = session
-        self.repo.model = Account
         return self.repo.create(body)
