@@ -1,7 +1,7 @@
 from fastapi import Depends
 from sqlalchemy.orm import Session
 
-from accounts.schemas import CreateAccount, Account
+from accounts.schemas import CreateAccount
 from database import get_db
 from utils.dependencies import BaseDependency
 

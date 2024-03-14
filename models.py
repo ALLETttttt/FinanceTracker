@@ -29,7 +29,7 @@ class Account(Base):
     account_name: Mapped[str]
     account_type: Mapped[str]
 
-    owner: Mapped[User] = relationship("User", back_populates="accounts")
+    owner: Mapped[User] = relationship("User", back_populates="account")
     transactions: Mapped[list['Transaction']] = relationship("Transaction", back_populates="account")
 
 
@@ -43,8 +43,8 @@ class Transaction(Base):
     description: Mapped[str]
     transaction_date: Mapped[date] = mapped_column(sqlalchemy.Date, default=date.today())
 
-    account: Mapped[Account] = relationship("Account", back_populates="transactions")
-    category: Mapped['Category'] = relationship("Category", back_populates="transactions")
+    account: Mapped[Account] = relationship("Account", back_populates="transaction")
+    category: Mapped['Category'] = relationship("Category", back_populates="transaction")
 
 
 class Category(Base):
@@ -66,8 +66,8 @@ class Budget(Base):
     amount: Mapped[float]
     added_date: Mapped[date] = mapped_column(sqlalchemy.Date, default=date.today())
 
-    user: Mapped[User] = relationship("User", back_populates="budgets")
-    category: Mapped[Category] = relationship("Category", back_populates="budgets")
+    user: Mapped[User] = relationship("User", back_populates="budget")
+    category: Mapped[Category] = relationship("Category", back_populates="budget")
 
 
 class Expense(Base):
@@ -81,4 +81,4 @@ class Expense(Base):
     description: Mapped[str]
     expense_date: Mapped[date] = mapped_column(sqlalchemy.Date, default=date.today())
 
-    user: Mapped[User] = relationship("User", back_populates="expenses")
+    user: Mapped[User] = relationship("User", back_populates="expense")

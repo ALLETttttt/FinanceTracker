@@ -9,6 +9,7 @@ class BaseAccount(ConfigSchema):
 
 class Account(BaseAccount):
     id: int
+    user_id: int
     owner: User
     transactions: list[Transaction]
 
