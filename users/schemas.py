@@ -10,13 +10,10 @@ class BaseUser(ConfigSchema):
 
 class User(BaseUser):
     id: int
-    # accounts: list[Account]
-    # budgets: list[Budget]
-    # expenses: list[Expense]
+    accounts: list[Account]
+    budgets: list[Budget]
+    expenses: list[Expense]
 
 
 class CreateUser(BaseUser):
     pass
-    # accounts: list[Account]
-    # budgets: list[Budget]
-    # expenses: list[Expense]

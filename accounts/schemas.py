@@ -1,14 +1,17 @@
-
+from models import User, Transaction
 from utils.config_schema import ConfigSchema
 
 
 class BaseAccount(ConfigSchema):
     account_name: str
+    account_type: str
 
 
 class Account(BaseAccount):
-    pass
+    id: int
+    owner: User
+    transactions: list[Transaction]
 
 
 class CreateAccount(BaseAccount):
-    pass
+    user_id: int
