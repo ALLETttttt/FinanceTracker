@@ -2,6 +2,7 @@ import punq as punq
 
 from utils.repository import AbcRepository
 from utils.dependencies import GetListDependency, RetrieveDependency, DeleteDependency
+from users.dependencies import UserCreateDependency
 
 
 def get_container(repository: type[AbcRepository]) -> punq.Container:
@@ -12,5 +13,6 @@ def get_container(repository: type[AbcRepository]) -> punq.Container:
     container.register(GetListDependency)
     container.register(RetrieveDependency)
     container.register(DeleteDependency)
+    container.register(UserCreateDependency)
 
     return container
