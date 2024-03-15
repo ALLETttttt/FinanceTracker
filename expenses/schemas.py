@@ -17,3 +17,7 @@ class CreateExpense(BaseExpense):
     user_id: int
     account_id: int
     category_id: int
+
+
+class ExpenseResponse(BaseExpense):
+    id: int
