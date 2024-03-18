@@ -3,10 +3,10 @@ import sqlalchemy
 from sqlalchemy.orm import Session
 
 from fastapi.testclient import TestClient
-from main import app
-from database import get_db
+from src.main import app
+from src.database import get_db
 
-from database import Base, engine
+from src.database import Base, engine
 
 client = TestClient(app)
 
