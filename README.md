@@ -28,7 +28,7 @@ Follow these steps to get started with the Finance Tracker:
 1. Clone the repository: `git clone https://github.com/ALLETttttt/FinanceTracker`
 2. Install dependencies: `pip install -r requirements.txt`
 3. Configure environment variables: Set up environment variables for database connection, secret key, etc.
-4. Run the application: `uvicorn src.main:app --reload`
+4. Run the application: `uvicorn app.main:app --reload`
 5. Access the application at `http://localhost:8000`
 
 ## Usage 📝
