@@ -55,7 +55,7 @@ Contributions are welcome! If you'd like to contribute to the Finance Tracker pr
 If you have any questions, suggestions, or feedback, feel free to contact me:
 
 - Email: b_alaidar@kbtu.kz
-- LinkedIn: [Your LinkedIn Profile](https://github.com/ALLETttttt/FinanceTracker)
+- LinkedIn: [LinkedIn Profile](https://github.com/ALLETttttt/FinanceTracker)
 
 ## License 📄
 
