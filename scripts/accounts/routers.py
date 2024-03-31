@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from utils.container import get_container
-from utils import GetListDependency, RetrieveDependency, DeleteDependency
+from utils.dependencies import GetListDependency, RetrieveDependency, DeleteDependency
 from scripts.accounts.repository import AccountRepo
 from scripts.accounts.dependencies import AccountCreateDependency
 

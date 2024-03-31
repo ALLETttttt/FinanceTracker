@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 
 from database import get_db
 from scripts.transactions.schemas import CreateTransaction
-from utils import BaseDependency
+from utils.dependencies import BaseDependency
 
 
 class TransactionCreateDependency(BaseDependency):

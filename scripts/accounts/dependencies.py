@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 
 from scripts.accounts.schemas import CreateAccount
 from database import get_db
-from utils import BaseDependency
+from utils.dependencies import BaseDependency
 
 
 class AccountCreateDependency(BaseDependency):

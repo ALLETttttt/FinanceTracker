@@ -1,5 +1,5 @@
 from utils.container import get_container
-from utils import GetListDependency, RetrieveDependency, DeleteDependency
+from utils.dependencies import GetListDependency, RetrieveDependency, DeleteDependency
 from scripts.transactions.repository import TransactionRepo
 from scripts.transactions.dependencies import TransactionCreateDependency
 from fastapi import APIRouter

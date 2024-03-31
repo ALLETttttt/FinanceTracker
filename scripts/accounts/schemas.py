@@ -1,5 +1,5 @@
 from scripts.transactions.schemas import TransactionResponse
-from utils import ConfigSchema
+from utils.config_schema import ConfigSchema
 
 
 class BaseAccount(ConfigSchema):

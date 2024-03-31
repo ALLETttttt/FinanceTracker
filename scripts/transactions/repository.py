@@ -2,7 +2,7 @@ from sqlalchemy.orm import Session
 
 from models import Transaction
 from scripts.transactions import schemas
-from utils import BaseRepository
+from utils.repository import BaseRepository
 
 
 class TransactionRepo(BaseRepository):

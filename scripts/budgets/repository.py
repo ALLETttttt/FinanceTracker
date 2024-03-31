@@ -2,7 +2,7 @@ from sqlalchemy.orm import Session
 
 from scripts.budgets import schemas
 from models import Budget
-from utils import BaseRepository
+from utils.repository import BaseRepository
 
 
 class BudgetRepo(BaseRepository):

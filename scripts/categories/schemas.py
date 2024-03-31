@@ -1,6 +1,6 @@
 from scripts.budgets.schemas import BudgetResponse
 from scripts.transactions.schemas import TransactionResponse
-from utils import ConfigSchema
+from utils.config_schema import ConfigSchema
 
 
 class BaseCategory(ConfigSchema):

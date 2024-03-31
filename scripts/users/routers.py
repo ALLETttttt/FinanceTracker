@@ -3,7 +3,7 @@ from fastapi import APIRouter
 from scripts.users.repository import UserRepo
 from scripts.users.dependencies import UserCreateDependency
 from utils.container import get_container
-from utils import GetListDependency, RetrieveDependency, DeleteDependency
+from utils.dependencies import GetListDependency, RetrieveDependency, DeleteDependency
 
 
 router = APIRouter(prefix="/user", tags=["Users"])

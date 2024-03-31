@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 
 from scripts.budgets.schemas import CreateBudget
 from database import get_db
-from utils import BaseDependency
+from utils.dependencies import BaseDependency
 
 
 class BudgetCreateDependency(BaseDependency):

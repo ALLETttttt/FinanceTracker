@@ -1,6 +1,6 @@
 
 from utils.container import get_container
-from utils import GetListDependency, RetrieveDependency, DeleteDependency
+from utils.dependencies import GetListDependency, RetrieveDependency, DeleteDependency
 from scripts.expenses.repository import ExpenseRepo
 from scripts.expenses.dependencies import ExpenseCreateDependency
 from fastapi import APIRouter

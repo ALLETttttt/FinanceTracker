@@ -1,6 +1,6 @@
 from datetime import date
 
-from utils import ConfigSchema
+from utils.config_schema import ConfigSchema
 
 
 class BaseExpense(ConfigSchema):

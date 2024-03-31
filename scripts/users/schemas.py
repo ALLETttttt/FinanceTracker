@@ -1,7 +1,7 @@
 from scripts.accounts.schemas import AccountResponse
 from scripts.budgets.schemas import BudgetResponse
 from scripts.expenses.schemas import ExpenseResponse
-from utils import ConfigSchema
+from utils.config_schema import ConfigSchema
 
 
 class BaseUser(ConfigSchema):

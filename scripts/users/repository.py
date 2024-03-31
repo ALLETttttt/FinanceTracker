@@ -2,7 +2,7 @@ from sqlalchemy.orm import Session
 
 from models import User
 from scripts.users import schemas
-from utils import BaseRepository
+from utils.repository import BaseRepository
 
 
 class UserRepo(BaseRepository):
